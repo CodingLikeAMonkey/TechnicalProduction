@@ -6,26 +6,27 @@ public partial class ENT_Player : CharacterBody3D
     [Export] public CharacterStats Movement;
     [Export] private CTRL_PlayerHud HUD;
 
-
     private CharacterState characterState;
     private Node3D camera;
-    private CollisionShape3D colBody;
 
-    // CTRL_PleayerMenu
+    // --- Ghost Rotation (Public) ---
+    public float GhostBodyYaw { get; private set; } = 0f;             // Radians
+    public float GhostBodyYawDegrees { get; private set; } = 0f;      // Degrees (optional)
+    public Quaternion GhostBodyRotation { get; private set; } = Quaternion.Identity;
 
+    // --- Input Tracking ---
+    private float inputHoldTime = 0f;
+    private Vector2 lastInputDirection = Vector2.Zero;
+    private bool wasRotatingFromTap = false;
 
     public override void _Ready()
     {
         if (Movement == null)
         {
-            GD.PrintErr("No stats resource asigned!");
+            GD.PrintErr("No stats resource assigned!");
         }
 
-        //HUD.MainMenuOpen += OnMainMenuOpen;
-        //HUD.MainMenuClosed += OnMainMenuClosed;
-
         camera = GetNode<Node3D>("%ThirdPersonCamera");
-        colBody = GetNode<CollisionShape3D>("%Body");
     }
 
     public override void _Input(InputEvent @event)
@@ -36,8 +37,6 @@ public partial class ENT_Player : CharacterBody3D
     {
         Vector3 velocity = Velocity;
 
-        velocity = Gravity(velocity, delta);
-        velocity = Jump(velocity, delta);
         velocity = MovementMotion(velocity, delta);
 
         Velocity = velocity;
@@ -46,15 +45,13 @@ public partial class ENT_Player : CharacterBody3D
 
     private void OnMainMenuOpen(InputEvent @event)
     {
-        GD.Print("The main menuuuuuuuuu is ooooopen");
+        GD.Print("The main menu is open");
         Input.MouseMode = Input.MouseModeEnum.Visible;
-
     }
 
     private void OnMainMenuClosed(InputEvent @event)
     {
-        GD.Print("Menu cloooosed");
+        GD.Print("Menu closed");
         Input.MouseMode = Input.MouseModeEnum.Captured;
-
     }
 }

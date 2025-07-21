@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://dmoap3fpcl8n5"]
+[gd_scene load_steps=7 format=3 uid="uid://dmoap3fpcl8n5"]
 
 [ext_resource type="PackedScene" uid="uid://c3q1mq52sfyfd" path="res://assets/rigs/y_bot.tscn" id="1_3c0ok"]
 [ext_resource type="Script" uid="uid://b2y6cp820mfqf" path="res://scripts/playerScripts/ENT_Player.cs" id="1_plwmo"]
 [ext_resource type="Resource" uid="uid://2osnbhmnpyqi" path="res://resources/characterStats/humanoid_movement_stats.tres" id="2_gmphs"]
 [ext_resource type="PackedScene" uid="uid://313mx5vkt3bv" path="res://assets/characterComponents/CTRL_Camera.tscn" id="2_y7kcb"]
+[ext_resource type="Script" uid="uid://datyjex4kddn7" path="res://assets/entities/characters/Body.cs" id="3_yk8bv"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_qte20"]
 radius = 0.3
@@ -17,6 +18,7 @@ Movement = ExtResource("2_gmphs")
 unique_name_in_owner = true
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.9, 0)
 shape = SubResource("CapsuleShape3D_qte20")
+script = ExtResource("3_yk8bv")
 
 [node name="Y_bot" parent="Body" instance=ExtResource("1_3c0ok")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.9, 0)
