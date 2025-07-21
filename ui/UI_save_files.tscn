@@ -1,0 +1,731 @@
+[gd_scene load_steps=6 format=3 uid="uid://p5df32t72d8r"]
+
+[ext_resource type="Script" uid="uid://itxgvc27rwso" path="res://scripts/UI_SaveFiles.cs" id="1_j7wn6"]
+[ext_resource type="Texture2D" uid="uid://ylb1tu4qmpvu" path="res://icon.svg" id="1_s1mj6"]
+[ext_resource type="Texture2D" uid="uid://l06i8g7p2msv" path="res://addons/SunshineClouds2/Dock/Icons/caret-down-solid.svg" id="2_wut13"]
+[ext_resource type="Script" uid="uid://cb3ho8b5lgx55" path="res://addons/SunshineClouds2/Dock/AccordionButton.gd" id="3_j50ws"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h1n7a"]
+bg_color = Color(0.546427, 0.607201, 0.680426, 1)
+
+[node name="UI_SaveFiles" type="ScrollContainer"]
+clip_contents = false
+offset_right = 8.0
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+script = ExtResource("1_j7wn6")
+
+[node name="VB_SaveFileContainer" type="VBoxContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 160
+
+[node name="Button" type="Button" parent="VB_SaveFileContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_h1n7a")
+icon = ExtResource("2_wut13")
+icon_alignment = 2
+expand_icon = true
+script = ExtResource("3_j50ws")
+metadata/_custom_type_script = "uid://cb3ho8b5lgx55"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -232.0
+offset_top = -64.0
+offset_right = 232.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+
+[node name="TextureRect" type="TextureRect" parent="VB_SaveFileContainer/Button/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_s1mj6")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VB_SaveFileContainer/Button/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Save File Name"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Level 23"
+
+[node name="Location" type="Label" parent="VB_SaveFileContainer/Button/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Dark Woods"
+
+[node name="playtime" type="Label" parent="VB_SaveFileContainer/Button/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "26:40:42"
+
+[node name="Button2" type="Button" parent="VB_SaveFileContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_h1n7a")
+icon = ExtResource("2_wut13")
+icon_alignment = 2
+expand_icon = true
+script = ExtResource("3_j50ws")
+metadata/_custom_type_script = "uid://cb3ho8b5lgx55"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -232.0
+offset_top = -64.0
+offset_right = 232.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+
+[node name="TextureRect" type="TextureRect" parent="VB_SaveFileContainer/Button2/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_s1mj6")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VB_SaveFileContainer/Button2/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button2/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Save File Name"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button2/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button2/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Level 23"
+
+[node name="Location" type="Label" parent="VB_SaveFileContainer/Button2/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Dark Woods"
+
+[node name="playtime" type="Label" parent="VB_SaveFileContainer/Button2/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "26:40:42"
+
+[node name="Button3" type="Button" parent="VB_SaveFileContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_h1n7a")
+icon = ExtResource("2_wut13")
+icon_alignment = 2
+expand_icon = true
+script = ExtResource("3_j50ws")
+metadata/_custom_type_script = "uid://cb3ho8b5lgx55"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -232.0
+offset_top = -64.0
+offset_right = 232.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+
+[node name="TextureRect" type="TextureRect" parent="VB_SaveFileContainer/Button3/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_s1mj6")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VB_SaveFileContainer/Button3/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button3/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Save File Name"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button3/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button3/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Level 23"
+
+[node name="Location" type="Label" parent="VB_SaveFileContainer/Button3/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Dark Woods"
+
+[node name="playtime" type="Label" parent="VB_SaveFileContainer/Button3/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "26:40:42"
+
+[node name="Button4" type="Button" parent="VB_SaveFileContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_h1n7a")
+icon = ExtResource("2_wut13")
+icon_alignment = 2
+expand_icon = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button4"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -232.0
+offset_top = -64.0
+offset_right = 232.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+
+[node name="TextureRect" type="TextureRect" parent="VB_SaveFileContainer/Button4/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_s1mj6")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VB_SaveFileContainer/Button4/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button4/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Save File Name"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button4/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button4/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Level 23"
+
+[node name="Location" type="Label" parent="VB_SaveFileContainer/Button4/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Dark Woods"
+
+[node name="playtime" type="Label" parent="VB_SaveFileContainer/Button4/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "26:40:42"
+
+[node name="Button5" type="Button" parent="VB_SaveFileContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_h1n7a")
+icon = ExtResource("2_wut13")
+icon_alignment = 2
+expand_icon = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button5"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -232.0
+offset_top = -64.0
+offset_right = 232.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+
+[node name="TextureRect" type="TextureRect" parent="VB_SaveFileContainer/Button5/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_s1mj6")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VB_SaveFileContainer/Button5/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button5/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Save File Name"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button5/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button5/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Level 23"
+
+[node name="Location" type="Label" parent="VB_SaveFileContainer/Button5/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Dark Woods"
+
+[node name="playtime" type="Label" parent="VB_SaveFileContainer/Button5/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "26:40:42"
+
+[node name="Button6" type="Button" parent="VB_SaveFileContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_h1n7a")
+icon = ExtResource("2_wut13")
+icon_alignment = 2
+expand_icon = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button6"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -232.0
+offset_top = -64.0
+offset_right = 232.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+
+[node name="TextureRect" type="TextureRect" parent="VB_SaveFileContainer/Button6/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_s1mj6")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VB_SaveFileContainer/Button6/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button6/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Save File Name"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button6/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button6/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Level 23"
+
+[node name="Location" type="Label" parent="VB_SaveFileContainer/Button6/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Dark Woods"
+
+[node name="playtime" type="Label" parent="VB_SaveFileContainer/Button6/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "26:40:42"
+
+[node name="Button7" type="Button" parent="VB_SaveFileContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_h1n7a")
+icon = ExtResource("2_wut13")
+icon_alignment = 2
+expand_icon = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button7"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -232.0
+offset_top = -64.0
+offset_right = 232.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+
+[node name="TextureRect" type="TextureRect" parent="VB_SaveFileContainer/Button7/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_s1mj6")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VB_SaveFileContainer/Button7/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button7/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Save File Name"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button7/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button7/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Level 23"
+
+[node name="Location" type="Label" parent="VB_SaveFileContainer/Button7/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Dark Woods"
+
+[node name="playtime" type="Label" parent="VB_SaveFileContainer/Button7/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "26:40:42"
+
+[node name="Button8" type="Button" parent="VB_SaveFileContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_h1n7a")
+icon = ExtResource("2_wut13")
+icon_alignment = 2
+expand_icon = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button8"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -232.0
+offset_top = -64.0
+offset_right = 232.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+
+[node name="TextureRect" type="TextureRect" parent="VB_SaveFileContainer/Button8/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_s1mj6")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VB_SaveFileContainer/Button8/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button8/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Save File Name"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button8/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button8/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Level 23"
+
+[node name="Location" type="Label" parent="VB_SaveFileContainer/Button8/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Dark Woods"
+
+[node name="playtime" type="Label" parent="VB_SaveFileContainer/Button8/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "26:40:42"
+
+[node name="Button9" type="Button" parent="VB_SaveFileContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_h1n7a")
+icon = ExtResource("2_wut13")
+icon_alignment = 2
+expand_icon = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button9"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -232.0
+offset_top = -64.0
+offset_right = 232.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+
+[node name="TextureRect" type="TextureRect" parent="VB_SaveFileContainer/Button9/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_s1mj6")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VB_SaveFileContainer/Button9/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button9/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Save File Name"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button9/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button9/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Level 23"
+
+[node name="Location" type="Label" parent="VB_SaveFileContainer/Button9/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Dark Woods"
+
+[node name="playtime" type="Label" parent="VB_SaveFileContainer/Button9/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "26:40:42"
+
+[node name="Button10" type="Button" parent="VB_SaveFileContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_h1n7a")
+icon = ExtResource("2_wut13")
+icon_alignment = 2
+expand_icon = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button10"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -232.0
+offset_top = -64.0
+offset_right = 232.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+
+[node name="TextureRect" type="TextureRect" parent="VB_SaveFileContainer/Button10/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_s1mj6")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VB_SaveFileContainer/Button10/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button10/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Save File Name"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button10/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button10/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Level 23"
+
+[node name="Location" type="Label" parent="VB_SaveFileContainer/Button10/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Dark Woods"
+
+[node name="playtime" type="Label" parent="VB_SaveFileContainer/Button10/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "26:40:42"
+
+[node name="Button11" type="Button" parent="VB_SaveFileContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_h1n7a")
+icon = ExtResource("2_wut13")
+icon_alignment = 2
+expand_icon = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button11"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -232.0
+offset_top = -64.0
+offset_right = 232.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+
+[node name="TextureRect" type="TextureRect" parent="VB_SaveFileContainer/Button11/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_s1mj6")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VB_SaveFileContainer/Button11/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button11/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Save File Name"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button11/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button11/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Level 23"
+
+[node name="Location" type="Label" parent="VB_SaveFileContainer/Button11/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Dark Woods"
+
+[node name="playtime" type="Label" parent="VB_SaveFileContainer/Button11/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "26:40:42"
+
+[node name="Button12" type="Button" parent="VB_SaveFileContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_h1n7a")
+icon = ExtResource("2_wut13")
+icon_alignment = 2
+expand_icon = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button12"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -232.0
+offset_top = -64.0
+offset_right = 232.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+
+[node name="TextureRect" type="TextureRect" parent="VB_SaveFileContainer/Button12/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_s1mj6")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VB_SaveFileContainer/Button12/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button12/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Save File Name"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button12/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button12/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Level 23"
+
+[node name="Location" type="Label" parent="VB_SaveFileContainer/Button12/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Dark Woods"
+
+[node name="playtime" type="Label" parent="VB_SaveFileContainer/Button12/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "26:40:42"
+
+[node name="Button13" type="Button" parent="VB_SaveFileContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_h1n7a")
+icon = ExtResource("2_wut13")
+icon_alignment = 2
+expand_icon = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button13"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -232.0
+offset_top = -64.0
+offset_right = 232.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+
+[node name="TextureRect" type="TextureRect" parent="VB_SaveFileContainer/Button13/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_s1mj6")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VB_SaveFileContainer/Button13/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button13/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Save File Name"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VB_SaveFileContainer/Button13/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Label" type="Label" parent="VB_SaveFileContainer/Button13/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Level 23"
+
+[node name="Location" type="Label" parent="VB_SaveFileContainer/Button13/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Dark Woods"
+
+[node name="playtime" type="Label" parent="VB_SaveFileContainer/Button13/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "26:40:42"

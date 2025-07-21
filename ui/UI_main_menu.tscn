@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://betvk2qmcou0"]
+
+[ext_resource type="Theme" uid="uid://cmajjmd3b583j" path="res://data/DATA_main_menu_buttons.tres" id="1_hd8u5"]
+[ext_resource type="Script" uid="uid://cmk8f1galy8hl" path="res://scripts/UI_MainMenu.cs" id="2_f2wpd"]
+
+[node name="UI_MainMenu" type="VBoxContainer"]
+theme = ExtResource("1_hd8u5")
+theme_override_constants/separation = 16
+script = ExtResource("2_f2wpd")
+
+[node name="BTN_continue" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+disabled = true
+text = "Continue"
+
+[node name="BTN_NewGame" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+text = "New Game"
+
+[node name="BTN_LoadGame" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Load Game"
+
+[node name="BTN_Settings" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Settings"

@@ -1,0 +1,173 @@
+[gd_scene load_steps=3 format=3 uid="uid://bchxi8fe13hm3"]
+
+[ext_resource type="PackedScene" uid="uid://1doh8mnqty3f" path="res://imports/trenchcoat.glb" id="1_pflif"]
+[ext_resource type="Script" uid="uid://qbpfy1rs35ho" path="res://scripts/SubRig.cs" id="2_nx50o"]
+
+[node name="SubRig_Trenchcoat" instance=ExtResource("1_pflif")]
+script = ExtResource("2_nx50o")
+
+[node name="GeneralSkeleton" parent="HumanoidRig_Coat" index="0"]
+bones/0/position = Vector3(0.00228471, 0.928696, -0.0103698)
+bones/0/rotation = Quaternion(-0.0364523, -0.367101, -0.0132912, 0.929372)
+bones/1/rotation = Quaternion(0.0504187, 0.0402749, -0.00853569, 0.997879)
+bones/2/rotation = Quaternion(0.100674, 0.0810496, -0.0185278, 0.99144)
+bones/3/rotation = Quaternion(0.100674, 0.0810498, -0.0185279, 0.99144)
+bones/4/rotation = Quaternion(-0.03756, -0.0111352, 0.00213884, 0.99923)
+bones/5/rotation = Quaternion(-0.054419, 0.176965, -0.012949, 0.982626)
+bones/7/rotation = Quaternion(0.524307, 0.460746, 0.542021, -0.468005)
+bones/8/rotation = Quaternion(0.0474558, 0.843246, -0.522597, 0.116522)
+bones/9/rotation = Quaternion(0.277512, -0.604209, 0.295218, 0.686123)
+bones/10/rotation = Quaternion(-0.10441, 0.789631, 0.125767, 0.591408)
+bones/11/rotation = Quaternion(-0.135758, 0.723105, 0.228918, 0.637405)
+bones/12/rotation = Quaternion(0.000364468, 0.00144637, -0.00727364, 0.999972)
+bones/13/rotation = Quaternion(-8.9407e-08, 1.78814e-07, -5.96046e-08, 1)
+bones/14/scale = Vector3(1.00058, 1.00049, 1.00015)
+bones/15/rotation = Quaternion(0.0326875, -0.00583945, 0.0611082, 0.997579)
+bones/16/rotation = Quaternion(0.142745, -0.00057067, -0.00700355, 0.989735)
+bones/17/rotation = Quaternion(-7.45058e-08, -2.98023e-08, 1.49012e-08, 1)
+bones/19/rotation = Quaternion(0.124645, 0.00593984, -0.0858738, 0.98846)
+bones/20/rotation = Quaternion(0.189733, -0.0011128, 0.0140203, 0.981735)
+bones/21/rotation = Quaternion(2.98023e-08, -2.98023e-08, 2.98023e-08, 1)
+bones/23/rotation = Quaternion(0.264942, -0.0133942, -0.130895, 0.955245)
+bones/24/rotation = Quaternion(0.275543, 0.00155005, 0.024071, 0.960986)
+bones/27/rotation = Quaternion(0.290916, -0.0139943, -0.16399, 0.942486)
+bones/28/rotation = Quaternion(0.336151, 0.0110318, 0.0495243, 0.940441)
+bones/29/rotation = Quaternion(-1.49012e-08, 4.47035e-08, -1.49012e-08, 1)
+bones/31/rotation = Quaternion(0.489271, -0.484345, -0.589578, -0.422401)
+bones/32/rotation = Quaternion(0.186814, 0.84547, -0.490797, -0.0969494)
+bones/33/rotation = Quaternion(0.285822, 0.679359, -0.222636, 0.63813)
+bones/34/rotation = Quaternion(0.14699, -0.743563, 0.00398286, 0.652298)
+bones/35/rotation = Quaternion(-0.201005, -0.628328, -0.167853, 0.732548)
+bones/36/rotation = Quaternion(0.164651, -0.079494, -0.0121256, 0.983069)
+bones/37/rotation = Quaternion(-1.49012e-08, 1.49012e-08, 2.98023e-08, 1)
+bones/38/scale = Vector3(1.00058, 1.00049, 1.00015)
+bones/39/rotation = Quaternion(0.0395796, 0.00974883, 0.0102168, 0.999117)
+bones/40/rotation = Quaternion(0.147207, 0.000354499, 0.00977447, 0.989057)
+bones/41/rotation = Quaternion(2.98023e-08, 2.98023e-08, 1.49012e-08, 1)
+bones/43/rotation = Quaternion(0.110964, 0.00861064, 0.024548, 0.993484)
+bones/44/rotation = Quaternion(0.263569, 0.00143449, -0.0168167, 0.964493)
+bones/45/rotation = Quaternion(-2.98023e-08, -2.98023e-08, -2.98023e-08, 1)
+bones/47/rotation = Quaternion(0.187007, -0.00836401, 0.0674064, 0.980008)
+bones/48/rotation = Quaternion(0.320408, -0.00220744, -0.0339878, 0.946667)
+bones/49/rotation = Quaternion(-1.49012e-08, 0, 1.49012e-08, 1)
+bones/51/rotation = Quaternion(0.207164, -0.01117, 0.0920575, 0.973901)
+bones/52/rotation = Quaternion(0.349279, -0.0120952, -0.0688396, 0.934408)
+bones/53/rotation = Quaternion(-1.49012e-08, -1.49012e-08, -1.49012e-08, 1)
+bones/55/rotation = Quaternion(0.0771253, 0.225172, 0.965581, -0.104892)
+bones/56/rotation = Quaternion(0.0387963, 0.946695, -0.297265, -0.117881)
+bones/57/rotation = Quaternion(-0.0451715, 0.671741, -0.737708, 0.0500975)
+bones/58/rotation = Quaternion(0.0278487, 0.999375, 0.0204243, -0.00756947)
+bones/60/rotation = Quaternion(-0.123741, 0.0316992, 0.983762, 0.126076)
+bones/61/rotation = Quaternion(0.0264597, 0.952754, -0.293252, -0.0745823)
+bones/62/rotation = Quaternion(0.0990482, 0.556048, -0.81785, -0.110094)
+bones/63/rotation = Quaternion(0.00311147, 0.999869, 0.0155996, -0.00300786)
+
+[node name="SpringCoutCenter" type="SpringBoneSimulator3D" parent="HumanoidRig_Coat/GeneralSkeleton" index="1"]
+setting_count = 1
+settings/0/root_bone_name = "coat_center"
+settings/0/root_bone = 65
+settings/0/end_bone_name = "coat_center.003"
+settings/0/end_bone = 68
+settings/0/extend_end_bone = false
+settings/0/center_from = 0
+settings/0/individual_config = false
+settings/0/rotation_axis = 3
+settings/0/radius/value = 0.02
+settings/0/radius/damping_curve = null
+settings/0/stiffness/value = 1.0
+settings/0/stiffness/damping_curve = null
+settings/0/drag/value = 0.4
+settings/0/drag/damping_curve = null
+settings/0/gravity/value = 0.1
+settings/0/gravity/damping_curve = null
+settings/0/gravity/direction = Vector3(0, -1, 0)
+settings/0/enable_all_child_collisions = true
+settings/0/exclude_collision_count = 0
+
+[node name="SpringCoatInnerLeft" type="SpringBoneSimulator3D" parent="HumanoidRig_Coat/GeneralSkeleton" index="2"]
+setting_count = 1
+settings/0/root_bone_name = "coat_inner_1.L"
+settings/0/root_bone = 69
+settings/0/end_bone_name = "coat_inner_4.L"
+settings/0/end_bone = 72
+settings/0/extend_end_bone = false
+settings/0/center_from = 0
+settings/0/individual_config = false
+settings/0/rotation_axis = 3
+settings/0/radius/value = 0.02
+settings/0/radius/damping_curve = null
+settings/0/stiffness/value = 1.0
+settings/0/stiffness/damping_curve = null
+settings/0/drag/value = 0.4
+settings/0/drag/damping_curve = null
+settings/0/gravity/value = 0.1
+settings/0/gravity/damping_curve = null
+settings/0/gravity/direction = Vector3(0, -1, 0)
+settings/0/enable_all_child_collisions = true
+settings/0/exclude_collision_count = 0
+
+[node name="SpringCoatOutterLeft" type="SpringBoneSimulator3D" parent="HumanoidRig_Coat/GeneralSkeleton" index="3"]
+setting_count = 1
+settings/0/root_bone_name = "coat_outter_1.L"
+settings/0/root_bone = 73
+settings/0/end_bone_name = "coat_outter_4.L"
+settings/0/end_bone = 76
+settings/0/extend_end_bone = false
+settings/0/center_from = 0
+settings/0/individual_config = false
+settings/0/rotation_axis = 3
+settings/0/radius/value = 0.02
+settings/0/radius/damping_curve = null
+settings/0/stiffness/value = 1.0
+settings/0/stiffness/damping_curve = null
+settings/0/drag/value = 0.4
+settings/0/drag/damping_curve = null
+settings/0/gravity/value = 0.1
+settings/0/gravity/damping_curve = null
+settings/0/gravity/direction = Vector3(0, -1, 0)
+settings/0/enable_all_child_collisions = true
+settings/0/exclude_collision_count = 0
+
+[node name="SpringCoatInnerRight" type="SpringBoneSimulator3D" parent="HumanoidRig_Coat/GeneralSkeleton" index="4"]
+setting_count = 1
+settings/0/root_bone_name = "coat_inner_1.R"
+settings/0/root_bone = 77
+settings/0/end_bone_name = "coat_inner_4.R"
+settings/0/end_bone = 80
+settings/0/extend_end_bone = false
+settings/0/center_from = 0
+settings/0/individual_config = false
+settings/0/rotation_axis = 3
+settings/0/radius/value = 0.02
+settings/0/radius/damping_curve = null
+settings/0/stiffness/value = 1.0
+settings/0/stiffness/damping_curve = null
+settings/0/drag/value = 0.4
+settings/0/drag/damping_curve = null
+settings/0/gravity/value = 0.1
+settings/0/gravity/damping_curve = null
+settings/0/gravity/direction = Vector3(0, -1, 0)
+settings/0/enable_all_child_collisions = true
+settings/0/exclude_collision_count = 0
+
+[node name="SpringCoatOutterRight" type="SpringBoneSimulator3D" parent="HumanoidRig_Coat/GeneralSkeleton" index="5"]
+setting_count = 1
+settings/0/root_bone_name = "coat_outter_1.R"
+settings/0/root_bone = 81
+settings/0/end_bone_name = "coat_outter_4.R"
+settings/0/end_bone = 84
+settings/0/extend_end_bone = false
+settings/0/center_from = 0
+settings/0/individual_config = false
+settings/0/rotation_axis = 3
+settings/0/radius/value = 0.02
+settings/0/radius/damping_curve = null
+settings/0/stiffness/value = 1.0
+settings/0/stiffness/damping_curve = null
+settings/0/drag/value = 0.4
+settings/0/drag/damping_curve = null
+settings/0/gravity/value = 0.1
+settings/0/gravity/damping_curve = null
+settings/0/gravity/direction = Vector3(0, -1, 0)
+settings/0/enable_all_child_collisions = true
+settings/0/exclude_collision_count = 0

@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://coqjtyi622elg"]
+
+[ext_resource type="Theme" uid="uid://de1agofkbtsul" path="res://data/DATA_main_menu_theme.tres" id="1_48lsm"]
+[ext_resource type="Script" uid="uid://c2w5328lh6l73" path="res://scripts/UI_Menus.cs" id="2_48lsm"]
+
+[node name="UI_Menus" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_48lsm")
+script = ExtResource("2_48lsm")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 64
+theme_override_constants/margin_top = 64
+theme_override_constants/margin_right = 64
+theme_override_constants/margin_bottom = 64
+
+[node name="UI_Background" type="ColorRect" parent="MarginContainer"]
+layout_mode = 2
+color = Color(0.201847, 0.200324, 0.196178, 1)
+
+[node name="CC_MenuContainer" type="CenterContainer" parent="MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2

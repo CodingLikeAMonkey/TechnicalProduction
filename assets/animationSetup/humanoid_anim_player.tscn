@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b16a0lfjqegiu"]
+
+[ext_resource type="AnimationLibrary" uid="uid://s3jywwpaqnpw" path="res://animationLibraries/humanoid_animation_library.glb" id="1_f6p78"]
+
+[node name="HumanoidAnimPlayer" type="AnimationPlayer"]
+libraries = {
+&"humanoid_animation_library": ExtResource("1_f6p78")
+}

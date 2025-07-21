@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="CharacterStats" load_steps=2 format=3 uid="uid://2osnbhmnpyqi"]
+
+[ext_resource type="Script" uid="uid://di848omh4nify" path="res://resources/characterStats/CharacterStats.cs" id="1_n6uls"]
+
+[resource]
+script = ExtResource("1_n6uls")
+WalkThreshold = 0.7
+TapThreshold = 0.06
+Speed = 5.0
+WalkSpeed = 2.0
+Acceleration = 35.0
+Friction = 50.0
+TurnSpeed = 10.0
+JumpImpulse = 5.0
+metadata/_custom_type_script = "uid://di848omh4nify"

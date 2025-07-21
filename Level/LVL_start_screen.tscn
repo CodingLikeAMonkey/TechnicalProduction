@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://us2v65ladfye"]
+
+[ext_resource type="PackedScene" uid="uid://b0r2yipuynqeg" path="res://ui/CTRL_player_hud.tscn" id="1_5b8dj"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_5b8dj"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_6lykd"]
+sky_material = SubResource("ProceduralSkyMaterial_5b8dj")
+
+[sub_resource type="Environment" id="Environment_5fm6u"]
+background_mode = 2
+sky = SubResource("Sky_6lykd")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="LVL_StartScreen" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_5fm6u")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.92941)
+
+[node name="CTRL_PlayerHUD" parent="." instance=ExtResource("1_5b8dj")]

@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgbt45xrtwi58"]
+
+[ext_resource type="Theme" uid="uid://cmajjmd3b583j" path="res://data/DATA_main_menu_buttons.tres" id="1_yinow"]
+[ext_resource type="Script" uid="uid://dvu5y1jmusbef" path="res://scripts/UI_PauseMenue.cs" id="2_yinow"]
+
+[node name="UI_PauseMenue" type="VBoxContainer"]
+theme = ExtResource("1_yinow")
+theme_override_constants/separation = 16
+script = ExtResource("2_yinow")
+
+[node name="BTN_Resume" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Resume Game"
+
+[node name="BTN_Settings" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Settings"
+
+[node name="BTN_TitleScreen" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Return to Title Screen"
+
+[node name="BTN_QuitGame" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Quit Game"

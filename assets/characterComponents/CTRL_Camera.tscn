@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://313mx5vkt3bv"]
+
+[ext_resource type="Script" uid="uid://ch2ym72pw8l4o" path="res://scripts/CTRL_Camera.cs" id="1_hfx2y"]
+
+[node name="CTRL_Camera" type="Node3D"]
+script = ExtResource("1_hfx2y")
+
+[node name="SpringArm3D" type="SpringArm3D" parent="."]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
+collision_mask = 2
+spring_length = 3.0
+
+[node name="Camera3D" type="Camera3D" parent="SpringArm3D"]
+unique_name_in_owner = true

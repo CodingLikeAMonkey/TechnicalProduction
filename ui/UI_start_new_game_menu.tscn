@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7mx27rrpcbb6"]
+
+[ext_resource type="Script" uid="uid://cnndp70jnpw4c" path="res://scripts/UI_StartNewGameMenu.cs" id="1_2sftt"]
+[ext_resource type="Script" uid="uid://kbutepo8d6jl" path="res://scripts/UI_HBoxContainer.cs" id="1_trb6q"]
+
+[node name="UI_StartNewGameMenu" type="VBoxContainer"]
+theme_override_constants/separation = 24
+script = ExtResource("1_2sftt")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Name your save file (this name will not appear in-game)"
+
+[node name="INP_SaveFileName" type="LineEdit" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Save File 1"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 32
+script = ExtResource("1_trb6q")
+
+[node name="BTN_Back" type="Button" parent="HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Back"
+
+[node name="BTN_StartGame" type="Button" parent="HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Start Game"

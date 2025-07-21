@@ -1,0 +1,25 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://de1agofkbtsul"]
+
+[ext_resource type="FontFile" uid="uid://cn7kyab7dp5ur" path="res://fonts/CormorantGaramond-Regular.ttf" id="1_fgrhf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x8cry"]
+content_margin_left = 16.0
+content_margin_top = 12.0
+content_margin_right = 16.0
+content_margin_bottom = 12.0
+bg_color = Color(0.137255, 0.137255, 0.137255, 1)
+
+[resource]
+default_font = ExtResource("1_fgrhf")
+default_font_size = 16
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_hover_color = Color(0.81, 0.57375, 0.243, 1)
+Button/colors/font_hover_pressed_color = Color(0.439013, 0.304234, 0.113832, 1)
+Button/font_sizes/font_size = 32
+Button/styles/disabled = SubResource("StyleBoxFlat_x8cry")
+Button/styles/focus = SubResource("StyleBoxFlat_x8cry")
+Button/styles/hover = SubResource("StyleBoxFlat_x8cry")
+Button/styles/normal = SubResource("StyleBoxFlat_x8cry")
+Button/styles/pressed = SubResource("StyleBoxFlat_x8cry")
+Label/font_sizes/font_size = 32
+LineEdit/font_sizes/font_size = 48
