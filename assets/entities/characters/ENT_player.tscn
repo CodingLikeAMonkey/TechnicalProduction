@@ -23,5 +23,6 @@ script = ExtResource("3_yk8bv")
 [node name="Y_bot" parent="Body" instance=ExtResource("1_3c0ok")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.9, 0)
 
-[node name="ThirdPersonCamera" parent="." instance=ExtResource("2_y7kcb")]
+[node name="ThirdPersonCamera" parent="." node_paths=PackedStringArray("ColBody") instance=ExtResource("2_y7kcb")]
 unique_name_in_owner = true
+ColBody = NodePath("../Body")
